@@ -1,0 +1,11 @@
+{
+    "cucumberautocomplete.steps": [
+    "features/steps/**/*.ts"
+    ],
+    "cucumberautocomplete.syncfeatures": "features/**/*.feature",
+    "editor.quickSuggestions": {
+    "comments": false,
+    "strings": true,
+    "other": true
+    }
+    }
