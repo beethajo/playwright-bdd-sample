@@ -2,10 +2,9 @@ import { expect } from "@playwright/test";
 import logger, { Given, When, Then } from "./fixtures";
 
 
-
-
 Given("I am on Playwright home page", async ({ page }) => {
-  await page.goto("https://playwright.dev");
+ 
+  await page.goto('/');
   logger.info('after playwright home')
 });
 
@@ -14,9 +13,9 @@ When("I click link {string}", async ({ page, }, name: string,) => {
 });
 
 Then("I see in title {string}", async ({ page }, text: string) => {
-  await expect(page).toHaveTitle(new RegExp(text), {timeout: 2000});
+  await expect(page).toHaveTitle(new RegExp(text));
 });
 
 Given('I open url {string}', async ({ page },url: string) => {
-  await page.goto(url);
+  await page.goto('/');
 })

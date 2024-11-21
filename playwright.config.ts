@@ -17,13 +17,16 @@ export default defineConfig({
     ["html", { open: "never" }],
   ],
   use: {
+    baseURL: 'https://playwright.dev',
     screenshot: "on",
     trace: "on",
+    //video: "on"
   },
+
   projects: [
     {
       name: "chromium",
-      use: { ...devices["Desktop Chrome"], headless: false },
+      use: { ...devices["Desktop Chrome"], headless: false }
     },
   ],
 });
