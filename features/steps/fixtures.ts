@@ -76,10 +76,10 @@ After(async function ({ $testInfo }) {
     type: 'png',
   });
 
-  await $testInfo.attach($testInfo.testId, {
-    body: img,
-    contentType: "image/png"
-  });
+  // await $testInfo.attach($testInfo.testId, {
+  //   body: img,
+  //   contentType: "image/png"
+  // });
 
   
   //$testInfo.attach('------------------------------------------------------------------');

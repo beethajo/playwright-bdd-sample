@@ -12,7 +12,7 @@ export default defineConfig({
     cucumberReporter("html", {
       outputFile: "cucumber-report/index.html",
       externalAttachments: true,
-      attachmentsBaseURL: "http://127.0.0.1:8080/data",
+     // attachmentsBaseURL: "http://127.0.0.1:8080/data",
     }),
     ["html", { open: "never" }],
   ],
@@ -20,7 +20,7 @@ export default defineConfig({
     baseURL: 'https://playwright.dev',
     screenshot: "on",
     trace: "on",
-    //video: "on"
+    video: "on"
   },
 
   projects: [
