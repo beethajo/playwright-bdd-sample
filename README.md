@@ -8,13 +8,13 @@ Example project that uses [playwright-bdd](https://github.com/vitalets/playwrigh
 2. Clone it to your local machine
 
    ```
-   git clone https://github.com/<%your github username%>/playwright-bdd-example.git
+   git clone https://github.com/<%your github username%>/playwright-bdd-sample.git
    ```
 
-3. Change directory to `playwright-bdd-example`
+3. Change directory to `playwright-bdd-sample`
 
    ```
-   cd playwright-bdd-example
+   cd playwright-bdd-sample
    ```
 
 4. Install dependencies
@@ -50,4 +50,4 @@ Example project that uses [playwright-bdd](https://github.com/vitalets/playwrigh
    git commit -m'repro for playwright-bdd issue xxx'
    git push
    ```
-9. [Open a pull-request](https://github.com/vitalets/playwright-bdd-example/pulls) and share the link
+9. [Open a pull-request](https://github.com/vitalets/playwright-bdd-sample/pulls) and share the link
