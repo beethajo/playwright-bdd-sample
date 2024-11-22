@@ -1,10 +1,13 @@
 // TodoPage.ts
-import { Page, expect } from '@playwright/test';
+import { Locator, Page, expect } from '@playwright/test';
 import { Fixture, Given, When, Then } from 'playwright-bdd/decorators';
 
 export @Fixture('todoPage') class TodoPage {
-  constructor(public page: Page) { }
-
+    
+  constructor(public page: Page) {
+   this.page = page;
+   }
+  
   @Given('I am on todo page')
   async open() {
     await this.page.goto('https://demo.playwright.dev/todomvc/');

@@ -17,6 +17,7 @@ const logger = createLogger({
 
 export default logger;
 
+export { expect } from "@playwright/test";
 
 type Fixtures = {
   // set types of your fixtures
@@ -75,17 +76,6 @@ After(async function ({ $testInfo }) {
     path: `./test-results/screenshots/${$testInfo.testId}.png`,
     type: 'png',
   });
-
-  // await $testInfo.attach($testInfo.testId, {
-  //   body: img,
-  //   contentType: "image/png"
-  // });
-
-  
-  //$testInfo.attach('------------------------------------------------------------------');
-  //$testInfo.attach('CURRENT PAGE URL: ' + page.url());
-//   //$testInfo.attach('FAILED SCENARIO NAME: ' + pickle.name);
-//   $testInfo.attach('------------------------------------------------------------------');
 
   try {
     // Mark the test as completed or failed

@@ -12,7 +12,7 @@ export default defineConfig({
     cucumberReporter("html", {
       outputFile: "cucumber-report/index.html",
       externalAttachments: true,
-     // attachmentsBaseURL: "http://127.0.0.1:8080/data",
+      // attachmentsBaseURL: "http://127.0.0.1:8080/data",
     }),
     ["html", { open: "never" }],
   ],
@@ -22,11 +22,12 @@ export default defineConfig({
     trace: "on",
     video: "on"
   },
+  fullyParallel: true,
 
   projects: [
     {
       name: "chromium",
-      use: { ...devices["Desktop Chrome"], headless: false }
+      use: { ...devices["Desktop Chrome"], headless: false },
     },
   ],
 });
